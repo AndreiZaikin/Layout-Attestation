@@ -31,15 +31,24 @@
 body {
     font-family: "Poppins", monospace;
     font-weight: 400;
+    font-size: 24px;
     margin: 40px 70px;
+    max-width: 1350px;
 
 }
 
-.logo-text {
+header {
+  margin-bottom: 200px;
+}
+
+.bold-48 {
   font-size: 48px;
   font-weight: 700;
+}
+
+.logo-text {
   color: #0E0578;
-  margin: 0 150px 0 0;
+  margin: 0 220px 0 0;
   display: inline-block;
   vertical-align: middle;
 }
@@ -64,9 +73,61 @@ body {
 
  }
 
- div {
-  display:inline-block
- }
+#hire-me {
+  columns: 250px 2;
+}
 
+.welcome-to {
+  font-size: 30px;
+  color: #2000E7;
+  margin: -25px 0 0 0;
+}
 
+.blue {
+  color: #2000E7;
+}
 
+.yellow {
+  color: #F2BD00;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.bkgr-blue {
+  background-color: #2000E7;
+}
+
+.bkgr-lightblue {
+  background-color: rgba(32, 0, 231, 0.04);
+}
+
+.lorem-box {
+  box-sizing: border-box;
+  width: 650px;
+  height: 100px;
+  overflow: hidden;
+  margin: 0 0 50px 0;
+}
+
+.button {
+  box-sizing: border-box;  
+  width: 246px;
+  height: 72px;
+  border: 2px solid #2000E7;
+  border-radius: 10px;
+  font-size: 24px;
+  box-shadow: 15px 25px 15px 0 #BFBFBF;  
+  margin: 25px 80px 25px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.my-photo * {
+  border-radius: 0 0 0 191px;
+  box-shadow: 30px -25px 0 0 #C3BAFD;
+}
