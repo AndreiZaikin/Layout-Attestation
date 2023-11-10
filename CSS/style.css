@@ -92,17 +92,17 @@ header {
 
   margin-top: 162px;
   padding: 206px 46px;
-/*   background-image: url("../Pics/about-me.png");
+  background-image: url("../Pics/about-me.png");
   background-repeat: no-repeat;
-  background-position: 550px -10px; */
+  background-position: 550px -10px;
 }
 
-#about-me p {
+.about-me-p {
   width: 415px;
   margin-top: 14px;
 }
 
-#about-me form {
+.about-me-form {
   margin-left: 31px;
 }
 
@@ -149,7 +149,7 @@ header {
   margin: 15px 80px 25px 0;
 }
 
-#welcome img {
+.welcome-img {
   border-radius: 0 0 0 191px;
   box-shadow: 30px -25px 0 0 #C3BAFD;
 }
