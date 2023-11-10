@@ -32,13 +32,12 @@ body {
     font-family: "Poppins", monospace;
     font-weight: 400;
     font-size: 24px;
-    margin: 40px 70px;
-    max-width: 1350px;
+    width: 1500px;
 
 }
 
 header {
-  margin-bottom: 200px;
+  margin: 40px 0 200px 70px;
 }
 
 .bold-48 {
@@ -57,6 +56,7 @@ header {
     font-size: 30px;
     display: inline-block;
     vertical-align: middle;
+    margin-left: 20px;
   }
 
 .ul-without-markers {
@@ -65,21 +65,59 @@ header {
     padding: 0;
   }
 
+  a {
+    text-decoration: none;
+    color: #686565;
+    text-align: left;
+  }
+
  .ul-without-markers li {
     display: inline;
     margin: 0 30px;
-    color: #686565;
-    text-align: left;
-
  }
 
-#hire-me {
+#welcome {
   columns: 250px 2;
+  margin-left: 70px;
 }
 
-.welcome-to {
+#about-me {
+  background-color: rgba(32, 0, 231, 0.04);
+  width: 100vw;
+  margin-top: 162px;
+  height: 905px;
+}
+
+.spacing-35 {
+  letter-spacing: 1rem;
+  margin: 0;
+}
+
+#about-me div {
+  width: 2000px;
+  columns: 250px 2;
+  padding: 206px 46px;
+}
+
+#about-me div p {
+  width: 415px;
+  margin-top: 14px;
+}
+
+#about-me div form {
+  margin-left: 31px;
+}
+
+#about-me div img {
+  position: relative;
+  height: 925px;
+  width: 925px;
+  top: -220px;
+  left: -520px;
+}
+
+.regular-30 {
   font-size: 30px;
-  color: #2000E7;
   margin: -25px 0 0 0;
 }
 
@@ -100,15 +138,14 @@ header {
 }
 
 .bkgr-lightblue {
-  background-color: rgba(32, 0, 231, 0.04);
+  background-color: rgba(67, 186, 253, 0.06);
 }
 
 .lorem-box {
   box-sizing: border-box;
   width: 650px;
-  height: 100px;
-  overflow: hidden;
-  margin: 0 0 50px 0;
+  height: 150px;
+  overflow: auto;
 }
 
 .button {
@@ -119,7 +156,7 @@ header {
   border-radius: 10px;
   font-size: 24px;
   box-shadow: 15px 25px 15px 0 #BFBFBF;  
-  margin: 25px 80px 25px 0;
+  margin: 15px 80px 25px 0;
 }
 
 img {
