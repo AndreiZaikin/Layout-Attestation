@@ -44,6 +44,11 @@ header {
   font-weight: 700;
 }
 
+.spacing-35 {
+  letter-spacing: 1rem;
+  margin: 0;
+}
+
 .logo-text {
   color: #0E0578;
   margin: 0 220px 0 0;
@@ -87,15 +92,12 @@ header {
   height: 905px;
 }
 
-.spacing-35 {
-  letter-spacing: 1rem;
-  margin: 0;
-}
-
 #about-me div {
   width: 2000px;
-  columns: 250px 2;
   padding: 206px 46px;
+  background-image: url("../Pics/about-me.png");
+  background-repeat: no-repeat;
+  background-position: 525px -10px;
 }
 
 #about-me div p {
@@ -111,8 +113,8 @@ header {
   position: relative;
   height: 925px;
   width: 925px;
-  top: -220px;
-  left: -520px;
+  top: 0px;
+  left: 0px;
 } */
 
 .regular-30 {
@@ -158,12 +160,7 @@ header {
   margin: 15px 80px 25px 0;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.my-photo * {
+#welcome img {
   border-radius: 0 0 0 191px;
   box-shadow: 30px -25px 0 0 #C3BAFD;
 }
