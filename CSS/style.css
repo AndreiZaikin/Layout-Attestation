@@ -97,11 +97,6 @@ header {
   background-position: 550px -10px;
 }
 
-.about-me-p {
-  width: 415px;
-  margin-top: 14px;
-}
-
 .about-me-form {
   margin-left: 31px;
 }
@@ -131,11 +126,16 @@ header {
   background-color: rgba(67, 186, 253, 0.06);
 }
 
-.lorem-box {
+.welcome-text {
   box-sizing: border-box;
   width: 650px;
   height: 150px;
   overflow: auto;
+}
+
+.about-me-text {
+  width: 415px;
+  margin-top: 14px;
 }
 
 .button {
