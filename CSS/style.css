@@ -88,24 +88,21 @@ header {
 #about-me {
   background-color: rgba(32, 0, 231, 0.04);
   width: 100vw;
-  margin-top: 162px;
-  height: 905px;
-}
+  height: 500px;
 
-#about-me div {
-  width: 2000px;
+  margin-top: 162px;
   padding: 206px 46px;
   background-image: url("../Pics/about-me.png");
   background-repeat: no-repeat;
-  background-position: 525px -10px;
+  background-position: 550px -10px;
 }
 
-#about-me div p {
+#about-me p {
   width: 415px;
   margin-top: 14px;
 }
 
-#about-me div form {
+#about-me form {
   margin-left: 31px;
 }
 
