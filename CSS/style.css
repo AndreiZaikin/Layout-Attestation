@@ -92,9 +92,9 @@ header {
 
   margin-top: 162px;
   padding: 206px 46px;
-  background-image: url("../Pics/about-me.png");
+/*   background-image: url("../Pics/about-me.png");
   background-repeat: no-repeat;
-  background-position: 550px -10px;
+  background-position: 550px -10px; */
 }
 
 #about-me p {
@@ -105,14 +105,6 @@ header {
 #about-me form {
   margin-left: 31px;
 }
-
-/* #about-me div img {
-  position: relative;
-  height: 925px;
-  width: 925px;
-  top: 0px;
-  left: 0px;
-} */
 
 .regular-30 {
   font-size: 30px;
