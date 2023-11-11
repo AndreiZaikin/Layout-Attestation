@@ -56,13 +56,13 @@ header {
   vertical-align: middle;
 }
 
-#welcome {
+.welcome {
   columns: 250px 2;
   margin-left: 70px;
   max-width: 1500px;
 }
 
-#menu {
+.menu {
     font-size: 30px;
     display: inline-block;
     vertical-align: middle;
@@ -86,7 +86,7 @@ header {
     margin: 0 30px;
  }
 
-#about-me {
+.about-me {
   background-color: rgba(32, 0, 231, 0.04);
   height: 500px;
 
@@ -97,12 +97,12 @@ header {
   background-position: 550px -10px;
 }
 
-.about-me-text {
+.about-me > p {
   width: 415px;
   margin-top: 14px;
 }
 
-.about-me-form {
+.about-me > form {
   margin-left: 31px;
 }
 
