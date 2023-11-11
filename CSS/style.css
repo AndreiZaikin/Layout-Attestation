@@ -49,7 +49,7 @@ header {
   margin: 0;
 }
 
-.logo-text {
+header > p {
   color: #0E0578;
   margin: 0 220px 0 0;
   display: inline-block;
@@ -59,10 +59,10 @@ header {
 .welcome {
   columns: 250px 2;
   margin-left: 70px;
-  max-width: 1500px;
+  max-width: 1400px;
 }
 
-.menu {
+header > nav {
     font-size: 30px;
     display: inline-block;
     vertical-align: middle;
@@ -131,14 +131,14 @@ header {
   background-color: rgba(67, 186, 253, 0.06);
 }
 
-.welcome-text {
+.welcome > div > p {
   box-sizing: border-box;
   width: 650px;
   height: 150px;
   overflow: auto;
 }
 
-.button {
+button {
   box-sizing: border-box;  
   width: 246px;
   height: 72px;
@@ -146,10 +146,10 @@ header {
   border-radius: 10px;
   font-size: 24px;
   box-shadow: 15px 25px 15px 0 #BFBFBF;  
-  margin: 15px 80px 25px 0;
+  margin-right: 70px;
 }
 
-.welcome-img {
+.welcome > img {
   border-radius: 0 0 0 191px;
   box-shadow: 30px -25px 0 0 #C3BAFD;
 }
