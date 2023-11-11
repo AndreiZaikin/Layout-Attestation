@@ -33,82 +33,103 @@ body {
     font-weight: 400;
     font-size: 24px;
     margin: 0;
+    padding: 0;
 }
 
 header {
-  margin: 40px 0 200px 70px;
-}
-
-.bold-48 {
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.spacing-35 {
-  letter-spacing: 1rem;
-  margin: 0;
+  position: relative;
+  left: 0;
+  top: 1em;
 }
 
 header > p {
+  padding-left: 1em;
   color: #0E0578;
-  margin: 0 220px 0 0;
-  display: inline-block;
-  vertical-align: middle;
+}
+
+header nav {
+  position: absolute;
+  right: 1em;
+  top: 0.5em;
+  font-size: 30px;
+}
+
+header ul {
+  list-style-type: none;    
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline;
+  margin: 0 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #686565;
+  text-align: left;
+}
+
+main {
+  margin-top: 8em;
 }
 
 .welcome {
-  columns: 250px 2;
-  margin-left: 70px;
-  max-width: 1400px;
+  columns: 10em 2;
+  margin: 0 2em;
 }
 
-header > nav {
-    font-size: 30px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 20px;
-  }
+.welcome > p {
+  margin: -25px 0 0 0;
+}
 
-.ul-without-markers {
-    list-style-type: none;    
-    margin: 0;
-    padding: 0;
-  }
+.welcome form {
+  margin-top: 3em;
+}
 
-  a {
-    text-decoration: none;
-    color: #686565;
-    text-align: left;
-  }
+.welcome img {
+  max-width: 100%;
+  height: auto;
 
- .ul-without-markers li {
-    display: inline;
-    margin: 0 30px;
- }
+  border-radius: 0 0 0 7em;
+  box-shadow: 1.2em -1em 0 0 #C3BAFD;
+}
+
+.my-photo {
+  text-align: right;
+  padding-right: 2em;
+}
 
 .about-me {
+  position: relative;
+  left: 0;
+  top: 0;
   background-color: rgba(32, 0, 231, 0.04);
-  height: 500px;
-
-  margin-top: 162px;
-  padding: 206px 46px;
-  background-image: url("../Pics/about-me.png");
-  background-repeat: no-repeat;
-  background-position: 550px -10px;
+  margin-top: 6em;
+  min-height: 57vh;
+  padding: 9em 1em 0 1em;
 }
 
 .about-me > p {
-  width: 415px;
-  margin-top: 14px;
+  max-width: 40vw;
+  margin: 1em 0 2em 0;
 }
 
 .about-me > form {
-  margin-left: 31px;
+  margin-left: 1em;
+}
+
+.about-me img {
+  max-width: 50vw;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: -2em;
 }
 
 .regular-30 {
   font-size: 30px;
-  margin: -25px 0 0 0;
 }
 
 .blue {
@@ -131,25 +152,23 @@ header > nav {
   background-color: rgba(67, 186, 253, 0.06);
 }
 
-.welcome > div > p {
-  box-sizing: border-box;
-  width: 650px;
-  height: 150px;
-  overflow: auto;
-}
-
 button {
   box-sizing: border-box;  
-  width: 246px;
-  height: 72px;
+  width: 10vw;
+  height: 3em;
   border: 2px solid #2000E7;
   border-radius: 10px;
   font-size: 24px;
   box-shadow: 15px 25px 15px 0 #BFBFBF;  
-  margin-right: 70px;
+  margin-right: 3vw;
 }
 
-.welcome > img {
-  border-radius: 0 0 0 191px;
-  box-shadow: 30px -25px 0 0 #C3BAFD;
+.bold-48 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.spacing-35 {
+  letter-spacing: 1rem;
+  margin: 0;
 }
