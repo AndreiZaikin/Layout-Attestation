@@ -1,10 +1,4 @@
 @font-face {
-    font-weight: 300;
-    font-family: "Poppins";
-    src: url("../Fonts/Poppins/Poppins-Light.ttf");
-  }
-
-@font-face {
     font-weight: 400;
     font-family: "Poppins";
     src: url("../Fonts/Poppins/Poppins-Regular.ttf");
@@ -17,15 +11,15 @@
   }
   
   @font-face {
-    font-weight: 800;
-    font-family: "Poppins";
-    src: url("../Fonts/Poppins/Poppins-ExtraBold.ttf");
+    font-weight: 400;
+    font-family: "Jost";
+    src: url("../Fonts/Jost/Jost-Regular.ttf");
   }
 
   @font-face {
-    font-weight: 900;
-    font-family: "Poppins";
-    src: url("../Fonts/Poppins/Poppins-Black.ttf");
+    font-weight: 700;
+    font-family: "Jost";
+    src: url("../Fonts/Jost/Jost-Bold.ttf");
   }
 
 body {
@@ -65,7 +59,7 @@ header li {
   margin: 0 2vw;
 }
 
-a {
+header a {
   text-decoration: none;
   color: #686565;
   text-align: left;
@@ -109,12 +103,12 @@ main {
   padding: 9em 1em 0 1em;
 }
 
-.about-me > p {
+.about-me p {
   max-width: 35vw;
   margin: 1em 0 2em 0;
 }
 
-.about-me > form {
+.about-me form {
   margin-left: 1em;
 }
 
@@ -126,8 +120,29 @@ main {
   bottom: 0;
 }
 
+.about-me button,
+.welcome button {
+  box-sizing: border-box;  
+  min-width: 8em;
+  width: 16vw;
+  height: 2.5em;
+  border: 2px solid #2000E7;
+  border-radius: 10px;
+  font-size: 24px;
+  box-shadow: 15px 25px 15px 0 #BFBFBF;  
+  margin-right: 5vw;
+  margin-bottom: 1em;
+  color: #FFFFFF;  
+  background-color: #2000E7;
+}
+
+.welcome button + button {
+  background-color: rgba(67, 186, 253, 0.06);  
+  color: #2000E7;
+}
+
 .my-projects {
-  margin-top: 12em;
+  margin: 40vh 0 0 0;
   text-align: center;
   background-color: rgba(255, 214, 150, 0.2);
 }
@@ -136,8 +151,17 @@ main {
   margin: 0;
 }
 
-.my-projects > p {
+.my-projects ul {
+  list-style-type: none;    
   margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.my-projects li {
+  margin: 6vh 6vw;
 }
 
 .my-projects img {
@@ -146,19 +170,9 @@ main {
   border-radius: 0.5vh;
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.flex p {
-  margin: 6vh 6vw;
-}
-
 .contacts {
   position: relative;
-  margin-top: 10em;
+  margin: 40vh 0 0 0;
   text-align: center;
   background-color: rgba(32, 0, 231, 0.04);
   min-height: 140vh;
@@ -168,20 +182,11 @@ main {
   margin: 0;
 }
 
-.contacts > p {
+.contacts p {
   margin: 0;
 }
 
-/* .contacts > div {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
-  margin: 5em 0 0 2em;
-} */
-
-.contacts > form {
+.contacts form {
   text-align: left;
   margin: 5em 0 0 2em;
 }
@@ -244,42 +249,94 @@ main {
   bottom: 10vh;
 }
 
-.regular-30 {
-  font-size: 30px;
+footer {
+  margin: 40vh 0 0 0;
+  padding: 1em 0 0 0;
+  color: black;
+  font-size: 31px;
+  font-family: "Jost", monospace;
+  background-color: rgba(255, 214, 150, 0.2);
 }
 
-.blue {
-  color: #2000E7;
+footer a {
+  text-decoration: none;
+  color: black;
 }
 
-.yellow {
-  color: #F2BD00;
+footer p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
-.white {
-  color: #FFFFFF;
+footer form {
+  position: relative;
+  margin-top: 1.5em;
 }
 
+footer input,
+footer button {
+  box-sizing: border-box;
+  border-radius: 1em;
+  font-family: "Jost", monospace;
+  font-weight: 700;
+  font-size: 31px;
+  height: 3em;
+  color: white;
+}
 
-.about-me button,
-.welcome button {
-  box-sizing: border-box;  
-  min-width: 8em;
-  width: 16vw;
-  height: 2.5em;
-  border: 2px solid #2000E7;
-  border-radius: 10px;
-  font-size: 24px;
-  box-shadow: 15px 25px 15px 0 #BFBFBF;  
-  margin-right: 5vw;
+footer ::placeholder {
+  color: lightgrey;
+  font-family: "Jost", monospace;
+  font-weight: 700;
+  font-size: 31px;
+}
+
+footer button {
+  position: absolute;
+  left: 20vw;
+  background-color: #F965FC;
+  width: 12vw;
+  border: 1px solid #F965FC;
+}
+
+footer input {
+  background-color: black;
+  margin: 0 0 0 1em;
+  padding-left: 1em;
+  width: 25vw;
+}
+
+footer img {
+  width: auto;
+  height: 1em;
+}
+
+footer ul {
+  list-style-type: none;    
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20vw;
+}
+
+footer li {
   margin-bottom: 1em;
-  color: #FFFFFF;  
-  background-color: #2000E7;
 }
 
-.welcome button + button {
-  background-color: rgba(67, 186, 253, 0.06);  
-  color: #2000E7;
+.bold {
+  font-weight: 700;
+}
+
+.margin-b-1em {
+  margin-bottom: 1em;
+}
+
+.p-center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bold-48 {
@@ -294,9 +351,79 @@ main {
 
 .spacing-35 {
   letter-spacing: 1rem;
-  margin: 0;
 }
 
 textarea {
   resize: none;
+}
+
+.regular-30 {
+  font-size: 30px;
+}
+
+.blue {
+  color: #2000E7;
+}
+
+.dark-blue {
+  color: #0E0578;
+}
+
+.yellow {
+  color: #F2BD00;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.w-40 {
+  width: 40vw;
+}
+
+.w-20 {
+  width: 20vw;
+}
+
+.poppins {
+  font-family: "Poppins", monospace;
+}
+
+button {
+  cursor: pointer;
+}
+
+.border-bottom {
+  border-bottom: 2px solid black;
+  margin: 0 2em;
 }
