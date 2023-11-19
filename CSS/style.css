@@ -74,7 +74,7 @@ main {
   display: flex;
   justify-content: space-between;  
   background-color: rgba(32, 0, 231, 0.04);
-  margin-top: 40vh;
+  margin-top: 36vh;
 }
 
 .about-me form {
