@@ -122,11 +122,6 @@ main {
   padding: 1em 0 0 0;
 }
 
-.my-projects > p {
-  margin: 0;
-  padding: 0;
-}
-
 .my-projects ul {
   display: flex;
   justify-content: center;
@@ -159,11 +154,6 @@ main {
 .contacts h1 {
   margin: 0;
   padding: 1em 0 0 0;
-}
-
-.contacts > p {
-  margin: 0;
-  padding: 0;  
 }
 
 label {
@@ -232,12 +222,6 @@ footer {
 
 footer a {
   color: black;
-}
-
-footer p {
-  margin: 0;
-  padding: 0;
-  text-align: left;
 }
 
 footer form {
@@ -316,20 +300,16 @@ footer li {
   margin-right: 2em;
 }
 
+.margin-t-0 {
+  margin-top: 0;
+}
+
 .margin-t-2em {
   margin-top: 2em;
 }
 
 .margin-t-8em {
   margin-top: 8em;
-}
-
-.margin-t-minus1em {
-  margin-top: -1em;
-}
-
-.padding-t-1em {
-  padding-top: 1em;
 }
 
 .padding-0 {
@@ -380,10 +360,6 @@ textarea {
   color: #F2BD00;
 }
 
-.white {
-  color: #FFFFFF;
-}
-
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -394,36 +370,16 @@ textarea {
   flex-direction: column;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.flex-center {
-  justify-content: center;
-}
-
 .flex-space-between {
   justify-content: space-between;
-}
-
-.flex-space-around {
-  justify-content: space-around;
 }
 
 .flex-start {
   align-items: flex-start;
 }
 
-.flex-center {
-  align-items: center;
-}
-
 .w-40 {
   width: 40vw;
-}
-
-.w-45 {
-  width: 45vw;
 }
 
 .w-20 {
@@ -440,7 +396,7 @@ button {
 
 .border-bottom {
   border-bottom: 3px solid black;
-  margin: 0 2em;
+  margin: 2em 2em 0 2em;
 }
 
 ul {
