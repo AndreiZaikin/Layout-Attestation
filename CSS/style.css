@@ -55,6 +55,10 @@ main {
   margin: 0 2em;
 }
 
+.welcome h1 {
+  margin-top: -1em;
+}
+
 .welcome form {
   margin-top: 3em;
 }
@@ -162,7 +166,7 @@ main {
   padding: 0;  
 }
 
-.contacts label {
+label {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -227,7 +231,6 @@ footer {
 }
 
 footer a {
-  /* text-decoration: none; */
   color: black;
 }
 
@@ -273,6 +276,7 @@ footer input {
   margin: 0 0 0 1em;
   padding-left: 1em;
   width: 25vw;
+  border: none;
 }
 
 footer img {
@@ -361,6 +365,7 @@ textarea {
 
 .regular-30 {
   font-size: 30px;
+  font-weight: 400;
 }
 
 .blue {
