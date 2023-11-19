@@ -8,43 +8,43 @@
 </head>
 <body>
     <header>
-        <p class="bold-48">UniDesign</p>
-        <nav>
-            <ul>
-                <li><a href="" >About Me</a></li>
-                <li><a href="" >Projects</a></li>
-                <li><a href="" >Contacts</a></li>
-                <li><a href="" >Hire Me</a></li>
-            </ul>
+        <p class="bold-48 dark-blue margin-0 padding-0">UniDesign</p>
+        <nav class="regular-30">
+            <a href="" >About Me</a>
+            <a href="" >Projects</a>
+            <a href="" >Contacts</a>
+            <a href="" >Hire Me</a>
         </nav>
     </header>
 
     <main>
         <section class="welcome">
-            <p class="regular-30 blue">Welcome To My PortFolio</p>
-            <span class="bold-48 blue">Hi, I am Steven<br>UI/UX </span>
-            <span class="bold-48 yellow">Designer</span>
-            <div>
+            <div class="margin-r-2em">
+                <p class="regular-30 blue margin-t-minus1em">Welcome To My PortFolio</p>
+                <span class="bold-48 blue">Hi, I am Steven<br>UI/UX </span>
+                <span class="bold-48 yellow">Designer</span>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat pariatur adipisci quaerat doloribus quis harum</p>
+                <form>
+                    <button>Hire Me</button>
+                    <button>My Project</button>
+                </form>
             </div>
-            <form>
-                <!-- <button class="white bkgr-blue">Hire Me</button>
-                <button class="blue bkgr-lightblue">My Project</button> -->
-                <button>Hire Me</button>
-                <button>My Project</button>
-            </form>
-            <div class="my-photo">
+            <div class="margin-r-1em">
                 <img src="./Pics/my-photo.png" alt="My photo">
             </div>
         </section>
         
         <section class="about-me">
-            <h1 class="bold-48 blue spacing-35">About Me</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam fugit deleniti eos rerum! Distinctio soluta iste delectus architecto pariatur quam libero fuga est? Fugit, deserunt nisi necessitatibus est fugiat perferendis.</p>
-            <form>
-                <button>Hire Me</button>
-            </form>
-            <img src="./Pics/about-me.png" alt="About me">            
+            <div class="margin-l-1em margin-t-8em">
+                <h1 class="bold-48 blue spacing-35">About Me</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam fugit deleniti eos rerum! Distinctio soluta iste delectus architecto pariatur quam libero fuga est? Fugit, deserunt nisi necessitatibus est fugiat perferendis.</p>
+                <form>
+                    <button>Hire Me</button>
+                </form>
+            </div>
+            <div>
+                <img src="./Pics/about-me.png" alt="About me">            
+            </div>
         </section>
 
         <section class="my-projects">
@@ -66,16 +66,20 @@
         <section class="contacts">
             <h1 class="bold-64 blue spacing-35">Contact me</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <form>
-                <label for="email" class="sr-only">Email</label>
-                <input id="email" type="email" name="email" placeholder="Email">
-                <label for="password" class="sr-only">Password</label>
-                <input id="password" type="password" name="password" placeholder="Password">
-                <label for="message" class="sr-only">Message..</label>
-                <textarea id="message" name="message" cols="5" rows="5" placeholder="Message.."></textarea>
-                <button>Contact</button>
-            </form>
-            <img src="./Pics/contact-me.png" alt="Contact me">
+            <div class="flex-row">
+                <form>
+                    <label for="email" class="sr-only">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Email">
+                    <label for="password" class="sr-only">Password</label>
+                    <input id="password" type="password" name="password" placeholder="Password">
+                    <label for="message" class="sr-only">Message..</label>
+                    <textarea id="message" name="message" cols="5" rows="5" placeholder="Message.."></textarea>
+                    <button>Contact</button>
+                </form>
+                <div>
+                    <img src="./Pics/contact-me.png" alt="Contact me">
+                </div>
+            </div>
         </section>
     </main>
 
@@ -109,9 +113,9 @@
             </div>
         </div>
         <p class="border-bottom"></p>
-        <div class="flex-row">
-            <p>CopyRighted 2020-2023   All Rights Reserved.</p>
-            <div class="flex-row">
+        <div class="flex-row flex-start flex-space-between">
+            <p class="margin-t-2em margin-b-1em margin-l-1em">CopyRighted 2020-2023   All Rights Reserved.</p>
+            <div class="margin-t-2em margin-b-1em margin-r-1em">
                 <a href=""><img src="./Pics/rutube.png" alt="Rutube"></a>
                 <a href=""><img src="./Pics/Odnoklassniki.svg" alt="Одноклассники"></a>
                 <a href=""><img src="./Pics/vk.png" alt="VK"></a>

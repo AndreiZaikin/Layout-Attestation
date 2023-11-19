@@ -31,38 +31,18 @@ body {
 }
 
 header {
-  position: relative;
-  left: 0;
-  top: 1em;
-}
-
-header > p {
-  padding-left: 1em;
-  color: #0E0578;
+  display: flex;
+  justify-content: space-between;  
+  margin: 1em 2em 0 2em;
 }
 
 header nav {
-  position: absolute;
-  right: 1em;
-  top: 0.5em;
-  font-size: 30px;
-}
-
-header ul {
-  list-style-type: none;    
-  margin: 0;
-  padding: 0;
-}
-
-header li {
-  display: inline;
-  margin: 0 2vw;
+  margin: 0.5em 8vw 0 0;
 }
 
 header a {
-  text-decoration: none;
   color: #686565;
-  text-align: left;
+  margin: 0 1.5vw;
 }
 
 main {
@@ -70,12 +50,9 @@ main {
 }
 
 .welcome {
-  columns: 10em 2;
+  display: flex;
+  justify-content: space-between;  
   margin: 0 2em;
-}
-
-.welcome > p {
-  margin: -25px 0 0 0;
 }
 
 .welcome form {
@@ -83,41 +60,30 @@ main {
 }
 
 .welcome img {
-  max-width: 100%;
+  width: 40vw;
   height: auto;
-
   border-radius: 0 0 0 12vw;
   box-shadow: 1.2em -1em 0 0 #C3BAFD;
 }
 
-.my-photo {
-  text-align: right;
-  padding-right: 2em;
-}
-
 .about-me {
-  position: relative;
+  display: flex;
+  justify-content: space-between;  
   background-color: rgba(32, 0, 231, 0.04);
-  margin-top: 6em;
-  min-height: 80vh;
-  padding: 9em 1em 0 1em;
-}
-
-.about-me p {
-  max-width: 35vw;
-  margin: 1em 0 2em 0;
+  margin-top: 40vh;
 }
 
 .about-me form {
   margin-left: 1em;
+  margin-top: 1.5em;
 }
 
 .about-me img {
+  width: 55vw;
   height: auto;
-  width: 60vw;
-  position: absolute;
-  left: 40vw;
-  bottom: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
 }
 
 .about-me button,
@@ -147,17 +113,21 @@ main {
   background-color: rgba(255, 214, 150, 0.2);
 }
 
-.my-projects h1 {
+.my-projects > h1 {
   margin: 0;
+  padding: 1em 0 0 0;
+}
+
+.my-projects > p {
+  margin: 0;
+  padding: 0;
 }
 
 .my-projects ul {
-  list-style-type: none;    
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 1em;
 }
 
 .my-projects li {
@@ -171,24 +141,25 @@ main {
 }
 
 .contacts {
-  position: relative;
   margin: 40vh 0 0 0;
   text-align: center;
   background-color: rgba(32, 0, 231, 0.04);
-  min-height: 140vh;
 }
 
-.contacts h1 {
-  margin: 0;
-}
-
-.contacts p {
-  margin: 0;
-}
 
 .contacts form {
   text-align: left;
   margin: 5em 0 0 2em;
+}
+
+.contacts h1 {
+  margin: 0;
+  padding: 1em 0 0 0;
+}
+
+.contacts > p {
+  margin: 0;
+  padding: 0;  
 }
 
 .contacts label {
@@ -232,7 +203,7 @@ main {
   background-color: #FFFFFF;
   color: gray;
   padding: 0;
-  margin: 0 9vw;
+  margin: 0 9vw 10vh 9vw;
 }
 
 .contacts ::placeholder {
@@ -242,11 +213,8 @@ main {
 }
 
 .contacts img {
-  width: 55vw;
+  width: 50vw;
   height: auto;
-  position: absolute;
-  left: 42vw;
-  bottom: 10vh;
 }
 
 footer {
@@ -259,7 +227,7 @@ footer {
 }
 
 footer a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: black;
 }
 
@@ -310,12 +278,10 @@ footer input {
 footer img {
   width: auto;
   height: 1em;
+  margin-left: 4vw;
 }
 
 footer ul {
-  list-style-type: none;    
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -332,6 +298,42 @@ footer li {
 
 .margin-b-1em {
   margin-bottom: 1em;
+}
+
+.margin-l-1em {
+  margin-left: 1em;
+}
+
+.margin-r-1em {
+  margin-right: 1em;
+}
+
+.margin-r-2em {
+  margin-right: 2em;
+}
+
+.margin-t-2em {
+  margin-top: 2em;
+}
+
+.margin-t-8em {
+  margin-top: 8em;
+}
+
+.margin-t-minus1em {
+  margin-top: -1em;
+}
+
+.padding-t-1em {
+  padding-top: 1em;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+.margin-0 {
+  margin: 0;
 }
 
 .p-center {
@@ -399,6 +401,10 @@ textarea {
   justify-content: space-between;
 }
 
+.flex-space-around {
+  justify-content: space-around;
+}
+
 .flex-start {
   align-items: flex-start;
 }
@@ -409,6 +415,10 @@ textarea {
 
 .w-40 {
   width: 40vw;
+}
+
+.w-45 {
+  width: 45vw;
 }
 
 .w-20 {
@@ -424,6 +434,16 @@ button {
 }
 
 .border-bottom {
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
   margin: 0 2em;
+}
+
+ul {
+  list-style-type: none;    
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
